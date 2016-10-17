@@ -73,7 +73,7 @@ angular
         restrict: 'AE',
         link: function (scope, element, attr) {
           //hide slider
-          angular.element(element).css('display', 'none');
+          $(element).css('display', 'none');
 
           var options, initOptions, destroy, init, destroyAndInit, currentIndex;
 
@@ -86,9 +86,9 @@ angular
               autoplaySpeed: scope.autoplaySpeed != null ? parseInt(scope.autoplaySpeed, 10) : 3000,
               arrows: scope.arrows !== 'false',
               asNavFor: scope.asNavFor ? scope.asNavFor : void 0,
-              appendArrows: scope.appendArrows ? angular.element(scope.appendArrows) : angular.element(element),
-              prevArrow: scope.prevArrow ? angular.element(scope.prevArrow) : void 0,
-              nextArrow: scope.nextArrow ? angular.element(scope.nextArrow) : void 0,
+              appendArrows: scope.appendArrows ? $(scope.appendArrows) : $(element),
+              prevArrow: scope.prevArrow ? $(scope.prevArrow) : void 0,
+              nextArrow: scope.nextArrow ? $(scope.nextArrow) : void 0,
               centerMode: scope.centerMode === 'true',
               centerPadding: scope.centerPadding || '50px',
               cssEase: scope.cssEase || 'ease',
@@ -129,7 +129,7 @@ angular
           };
 
           destroy = function () {
-            var slickness = angular.element(element);
+            var slickness = $(element);
             if (slickness.hasClass('slick-initialized')) {
               slickness.remove('slick-list');
               slickness.slick('unslick');
@@ -141,9 +141,9 @@ angular
           init = function () {
             initOptions();
 
-            var slickness = angular.element(element);
+            var slickness = $(element);
 
-            if (angular.element(element).hasClass('slick-initialized')) {
+            if ($(element).hasClass('slick-initialized')) {
               if (options.enabled) {
                 return slickness.slick('getSlick');
               } else {
@@ -164,7 +164,7 @@ angular
               });
 
               $timeout(function () {
-                angular.element(element).css('display', 'block');
+                $(element).css('display', 'block');
                 slickness.not('.slick-initialized').slick(options);
               });
             }
