@@ -8,7 +8,8 @@
 
 
 'use strict';
-
+var $ = require('jquery');
+var slickC = require('slick-carousel');
 angular
   .module('slickCarousel', [])
   //global config
@@ -299,3 +300,4 @@ angular
       };
     }
   ]);
+module.exports='slickCarousel';
