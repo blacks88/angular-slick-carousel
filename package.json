@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "jquery": "^3.1.1",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "https://github.com/blacks88/slick.git"
   },
   "devDependencies": {
     "gulp": "~3.9.0",
