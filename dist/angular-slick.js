@@ -3,7 +3,8 @@
  * DevMark <hc.devmark@gmail.com>
  * https://github.com/devmark/angular-slick-carousel
  * Version: 3.1.7 - 2016-08-04T06:17:55.528Z
- * License: MIT
+ * License: MIT+
+
  */
 
 
