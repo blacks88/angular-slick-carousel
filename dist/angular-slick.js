@@ -20,7 +20,7 @@ angular
   .directive('slick', [
     '$timeout', 'slickCarouselConfig', function ($timeout, slickCarouselConfig) {
       var slickMethodList, slickEventList;
-      slickMethodList = ['reinit','slickGoTo', 'slickNext', 'slickPrev', 'slickPause', 'slickPlay', 'slickAdd', 'slickRemove', 'slickFilter', 'slickUnfilter', 'unslick', 'slickTogglePopoverDiv'];
+      slickMethodList = ['slickInit','slickReInit','slickGoTo', 'slickNext', 'slickPrev', 'slickPause', 'slickPlay', 'slickAdd', 'slickRemove', 'slickFilter', 'slickUnfilter', 'unslick', 'slickTogglePopoverDiv'];
       slickEventList = ['afterChange', 'beforeChange', 'breakpoint', 'destroy', 'edge', 'init', 'reInit', 'setPosition', 'swipe', 'lazyLoaded', 'lazyLoadError'];
 
       return {
