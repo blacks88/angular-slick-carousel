@@ -179,7 +179,7 @@ angular
                 args = Array.prototype.slice.call(arguments);
                 args.unshift(value);
 				console.log('slickness',slickness);
-				console.log('slick',slick);
+				console.log('slick',slickness.slick);
                 slickness.slick.apply(element, args);
               };
             });
